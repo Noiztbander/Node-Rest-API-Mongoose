@@ -1,0 +1,47 @@
+{
+  "name": "node-rest-api-mongoose",
+  "version": "1.0.0",
+  "description": "This project was done as practice to learn Node, Mongoose, make and Api rest with this NoSQL backend. I would like if you make a visit :)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "dev": "nodemon --inspect --trace-warnings ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Noiztbander/Node-Rest-API-Mongoose.git"
+  },
+  "keywords": [
+    "node",
+    "mongoose",
+    "backend",
+    "mongodb"
+  ],
+  "author": "Erick Noiztbander",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Noiztbander/Node-Rest-API-Mongoose/issues"
+  },
+  "homepage": "https://github.com/Noiztbander/Node-Rest-API-Mongoose#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "loglevel": "^1.7.1",
+    "mongoose": "^5.12.15",
+    "npm-check-updates": "^11.7.1",
+    "rand-token": "^1.0.1",
+    "validator": "^13.6.0"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^6.9.6",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.3.2"
+  }
+}

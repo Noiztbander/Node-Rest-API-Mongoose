@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<title>MongoDb</title>
+</head>
+<body>
+	<header>
+		<h3>
+			MongoDB + Mongoose + Exprees + Atlas
+		</h3>
+	</header>
+	<main>
+		<form class="loginForm" action="../utils/requestMethods.js" method="POST">
+			<label for="name">
+				<input placeholder="Login name.." type="text" name="name">
+			</label>
+			<label for="lastName">
+				<input placeholder="Authors Last name.." type="text" name="lastName">
+			</label>
+			<button value="Submit" type="submit">Login</button>
+		</form>
+
+		<form class="registerForm" action="" method="POST">
+			<label for="title">
+				<input placeholder="Book title" type="text" name="title">
+			</label>
+			<label for="releaseYear">
+				<input placeholder="Release Year" type="text" name="releaseYear">
+			</label>
+			<label for="category">
+				<input placeholder="Category" type="text" name="category">
+			</label>
+			<label for="dateOfDeath">
+				<select name="dateOfDeath" id="selectForm">
+					<option value="volvo">Admin</option>
+					<option value="saab">Normal User</option>
+				</select>
+			</label>
+			<button value="Submit" type="submit">Register</button>
+		</form>
+	</main>
+	<footer>
+		<h4>
+			Assembler School
+		</h4>
+	</footer>
+</body>
+</html>

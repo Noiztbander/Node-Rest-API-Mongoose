@@ -7,7 +7,8 @@ const {
   MONGO_DB_URL_DEVELOPMENT,
   MONGO_DB_URL_TEST,
   ACCESS_TOKEN_SECRET,
-  PORT,
+  LOCAL_PORT,
+  ATLAS_PORT,
   ENCRYPTION_SALT_DEVELOPMENT,
   ENCRYPTION_SALT_PRODUCTION,
 } = process.env;
@@ -15,7 +16,8 @@ const {
 const CONFIG = {
   production: {
     app: {
-      PORT: PORT || 3000,
+      LOCAL_PORT: LOCAL_PORT || 27017,
+      ATLAS_PORT: ATLAS_PORT,
     },
     db: {
       url: MONGO_DB_URL_PRODUCTION,
@@ -26,7 +28,8 @@ const CONFIG = {
   },
   development: {
     app: {
-      PORT: PORT || 4000,
+      LOCAL_PORT: LOCAL_PORT || 27017,
+      ATLAS_PORT: ATLAS_PORT,
     },
     db: {
       url: MONGO_DB_URL_DEVELOPMENT,
@@ -37,7 +40,8 @@ const CONFIG = {
   },
   test: {
     app: {
-      PORT: PORT || 4000,
+      LOCAL_PORT: LOCAL_PORT || 27017,
+      ATLAS_PORT: ATLAS_PORT,
     },
     db: {
       url: MONGO_DB_URL_TEST,

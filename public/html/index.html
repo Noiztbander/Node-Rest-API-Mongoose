@@ -10,34 +10,34 @@
 <body>
 	<header>
 		<h3>
-			MongoDB + Mongoose + Exprees + Atlas
+			Mongoose + Exprees + Atlas
 		</h3>
 	</header>
 	<main>
-		<form class="loginForm" action="../utils/requestMethods.js" method="POST">
-			<label for="name">
-				<input placeholder="Login name.." type="text" name="name">
+		<form class="loginForm" action="/users" method="POST">
+			<label for="loginName">
+				<input placeholder="Login name.." type="text" name="loginName">
 			</label>
-			<label for="lastName">
-				<input placeholder="Authors Last name.." type="text" name="lastName">
+			<label for="password">
+				<input placeholder="Password" type="text" name="password">
 			</label>
 			<button value="Submit" type="submit">Login</button>
 		</form>
 
 		<form class="registerForm" action="" method="POST">
-			<label for="title">
-				<input placeholder="Book title" type="text" name="title">
+			<label for="username">
+				<input placeholder="User Name" type="text" name="username">
 			</label>
-			<label for="releaseYear">
-				<input placeholder="Release Year" type="text" name="releaseYear">
+			<label for="password">
+				<input placeholder="Write your password" type="text" name="password">
+			</label>
+			<label for="email">
+				<input placeholder="Email" type="text" name="email">
 			</label>
 			<label for="category">
-				<input placeholder="Category" type="text" name="category">
-			</label>
-			<label for="dateOfDeath">
-				<select name="dateOfDeath" id="selectForm">
-					<option value="volvo">Admin</option>
-					<option value="saab">Normal User</option>
+				<select name="category" id="selectForm">
+					<option value="admin">Admin</option>
+					<option value="normalUser">Normal User</option>
 				</select>
 			</label>
 			<button value="Submit" type="submit">Register</button>

@@ -3,26 +3,29 @@ const db = require("../model");
 async function register(req, res, next) {
   const { username, email, password } = req.body;
 
-  try {
-    //const encryptedPassword = encryptString(password);
+  console.log(req.body);
+  // console.log(res);
 
-    const { _id } = await db.User.create({
-      username: username,
-      email: email,
-      password: password,
-    });
+  // try {
+  //   //const encryptedPassword = encryptString(password);
 
-    return res.status(201).send({
-      message: "User created successfully!",
-      data: {
-        id: _id,
-      },
-    });
-  } catch (err) {
-    return res.status(500).send({
-      error: err,
-    });
-  }
+  //   const { _id } = await db.User.create({
+  //     username: username,
+  //     email: email,
+  //     password: password,
+  //   });
+
+  //   return res.status(201).send({
+  //     message: "User created successfully!",
+  //     data: {
+  //       id: _id,
+  //     },
+  //   });
+  // } catch (err) {
+  //   return res.status(500).send({
+  //     error: err,
+  //   });
+  // }
 }
 
 // async function signIn(req, res, next) {}

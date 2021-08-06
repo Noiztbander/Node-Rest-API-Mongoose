@@ -4,11 +4,13 @@ const helmet = require("helmet");
 const { json } = require("body-parser");
 // const morgan = require("morgan");
 
-// const { userRouter } = require("./routes");
+const { userRouter } = require("./routes");
 // const { errorMiddleware } = require("./middlewares");
 const app = express();
 const path = require('path');
 const router = express.Router();
+
+// console.log( userRouter);
 
 // app.use(errorMiddleware);
 // app.use(morgan("dev"));
@@ -16,7 +18,7 @@ app.use(helmet());
 app.use(json());
 
 // app.use("/account", accountRouter);
-// app.use("/users", userRouter);
+app.use("/users", userRouter);
 
 app.use(express.static(__dirname + '/../public'));
 
